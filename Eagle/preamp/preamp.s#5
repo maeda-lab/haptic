@@ -1429,16 +1429,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C3" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-AI3H" device="_861141084008" package3d_urn="urn:adsk.eagle:package:491737/2" technology="_25X30"/>
 <part name="C4" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-AI3H" device="_861141084008" package3d_urn="urn:adsk.eagle:package:491737/2" technology="_25X30"/>
 <part name="U1" library="SparkFun-IC-Amplifiers" library_urn="urn:adsk.eagle:library:520" deviceset="LM358" device="" package3d_urn="urn:adsk.eagle:package:38666/1" value="LM358"/>
-<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10M"/>
-<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10M"/>
-<part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10M"/>
-<part name="C5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="CC0603JRNPO9BN270" device="" package3d_urn="urn:adsk.eagle:package:10872909/3"/>
-<part name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="CC0603JRNPO9BN270" device="" package3d_urn="urn:adsk.eagle:package:10872909/3"/>
-<part name="C7" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-AI3H" device="_861141084008" package3d_urn="urn:adsk.eagle:package:491737/2" technology="_25X30"/>
-<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10M"/>
-<part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10M"/>
-<part name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="CC0603JRNPO9BN270" device="" package3d_urn="urn:adsk.eagle:package:10872909/3"/>
-<part name="C9" library="Wurth_Elektronik_Passive_Capacitors_rev18b" library_urn="urn:adsk.eagle:library:491551" deviceset="WCAP-AI3H" device="_861141084008" package3d_urn="urn:adsk.eagle:package:491737/2" technology="_25X30"/>
 </parts>
 <sheets>
 <sheet>
@@ -1483,50 +1473,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="40.64" y="89.662" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="40.64" y="76.2" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="U1" gate="G2" x="45.72" y="-12.7" smashed="yes" rot="MR180">
-<attribute name="NAME" x="40.64" y="-18.542" size="1.778" layer="95" font="vector" rot="MR180"/>
-<attribute name="VALUE" x="40.64" y="-5.08" size="1.778" layer="95" font="vector" rot="MR180"/>
+<instance part="U1" gate="G2" x="43.18" y="10.16" smashed="yes">
+<attribute name="NAME" x="38.1" y="16.002" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="38.1" y="2.54" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="U1" gate="G3" x="83.82" y="35.56" smashed="yes">
 <attribute name="NAME" x="80.518" y="30.48" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="88.9" y="30.48" size="1.778" layer="95" font="vector" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$1" x="-17.78" y="-15.24" smashed="yes">
-<attribute name="NAME" x="-17.78" y="-13.716" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="-17.78" y="-16.764" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R7" gate="G$1" x="25.4" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.876" y="5.08" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="26.924" y="5.08" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R8" gate="G$1" x="25.4" y="-27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.876" y="-27.94" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="26.924" y="-27.94" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="C5" gate="G$1" x="2.54" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="-1.143" y="83.82" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C6" gate="G$1" x="7.62" y="-15.24" smashed="yes" rot="R90">
-<attribute name="NAME" x="3.937" y="-17.78" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C7" gate="G$1" x="38.1" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="34.925" y="22.86" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="34.925" y="31.115" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R9" gate="G$1" x="38.1" y="15.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="39.624" y="15.24" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="36.576" y="15.24" size="1.778" layer="96" font="vector" rot="R270" align="top-center"/>
-</instance>
-<instance part="R10" gate="G$1" x="50.8" y="7.62" smashed="yes" rot="R180">
-<attribute name="NAME" x="50.8" y="6.096" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="50.8" y="9.144" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
-</instance>
-<instance part="C8" gate="G$1" x="50.8" y="0" smashed="yes" rot="R90">
-<attribute name="NAME" x="47.117" y="-2.54" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C9" gate="G$1" x="68.58" y="-12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="63.5" y="-9.525" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="71.755" y="-9.525" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -1537,8 +1490,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="86.36" x2="0" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<junction x="0" y="86.36"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1574,8 +1525,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="22.86" y="86.36"/>
 <pinref part="U1" gate="G1" pin="-IN"/>
 <wire x1="38.1" y1="86.36" x2="22.86" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<junction x="7.62" y="86.36"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1590,62 +1539,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="55.88" y1="71.12" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <junction x="55.88" y="71.12"/>
 <junction x="55.88" y="83.82"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-15.24" x2="5.08" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G2" pin="-IN"/>
-<wire x1="12.7" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="-15.24" x2="38.1" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="25.4" y="-15.24"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="-22.86" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="U1" gate="G2" pin="+IN"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-10.16" x2="38.1" y2="0" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="0" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="7.62" x2="38.1" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="7.62" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
-<junction x="38.1" y="7.62"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
-<junction x="38.1" y="0"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="7.62" x2="55.88" y2="0" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="0" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-12.7" x2="63.5" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="55.88" y="0"/>
-<pinref part="U1" gate="G2" pin="OUT"/>
-<wire x1="53.34" y1="-12.7" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="55.88" y="-12.7"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="20.32" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
