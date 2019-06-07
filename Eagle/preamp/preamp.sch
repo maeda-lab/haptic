@@ -1560,6 +1560,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <text x="43.18" y="25.4" size="1.778" layer="91">6.3u</text>
 <text x="5.08" y="88.9" size="1.778" layer="91">0.27u</text>
 <text x="10.16" y="-12.7" size="1.778" layer="91">0.27u</text>
+<text x="93.98" y="83.82" size="1.778" layer="91">「preampでによる増幅の直後の信号」計測位置</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="-17.78" y="86.36" smashed="yes">
