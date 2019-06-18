@@ -17042,16 +17042,16 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="1u or 2.2u"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33u"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33u"/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="JP7" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
-<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="10k"/>
+<part name="5V_SUPPLY_FOR_SENSOR" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="5V_SHARE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="SENSOR_OUTPUT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="18V_SUPPLY_FOR_OPEAMP" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="18V_SHARE" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="SENSOR_INPUT" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="700k"/>
 <part name="D2" library="LED" library_urn="urn:adsk.eagle:library:11396303" deviceset="LTL-1CHE" device="" package3d_urn="urn:adsk.eagle:package:10893502/2"/>
 <part name="D3" library="LED" library_urn="urn:adsk.eagle:library:11396303" deviceset="LTL-1CHE" device="" package3d_urn="urn:adsk.eagle:package:10893502/2"/>
-<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="10k"/>
+<part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="700k"/>
 </parts>
 <sheets>
 <sheet>
@@ -17147,27 +17147,27 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <attribute name="NAME" x="115.824" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.824" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="-10.16" y="53.34" smashed="yes" rot="R180">
+<instance part="5V_SUPPLY_FOR_SENSOR" gate="G$1" x="-10.16" y="53.34" smashed="yes" rot="R180">
 <attribute name="NAME" x="-3.81" y="47.625" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-3.81" y="58.42" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP2" gate="G$1" x="-10.16" y="43.18" smashed="yes" rot="R180">
+<instance part="5V_SHARE" gate="G$1" x="-10.16" y="43.18" smashed="yes" rot="R180">
 <attribute name="NAME" x="-3.81" y="37.465" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-3.81" y="48.26" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP5" gate="G$1" x="177.8" y="58.42" smashed="yes">
+<instance part="SENSOR_OUTPUT" gate="G$1" x="177.8" y="58.42" smashed="yes">
 <attribute name="NAME" x="171.45" y="64.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="JP6" gate="A" x="-10.16" y="30.48" smashed="yes" rot="R180">
+<instance part="18V_SUPPLY_FOR_OPEAMP" gate="A" x="-10.16" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="-3.81" y="24.765" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-3.81" y="38.1" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP7" gate="A" x="-10.16" y="17.78" smashed="yes" rot="R180">
+<instance part="18V_SHARE" gate="A" x="-10.16" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="-3.81" y="12.065" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-3.81" y="25.4" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="JP3" gate="A" x="-10.16" y="68.58" smashed="yes" rot="R180">
+<instance part="SENSOR_INPUT" gate="A" x="-10.16" y="68.58" smashed="yes" rot="R180">
 <attribute name="NAME" x="-3.81" y="60.325" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-3.81" y="76.2" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -17235,7 +17235,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <segment>
 <pinref part="U1" gate="G1" pin="+IN"/>
 <wire x1="-7.62" y1="71.12" x2="10.16" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="4"/>
+<pinref part="SENSOR_INPUT" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -17261,10 +17261,10 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="30.48" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="33.02" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="JP6" gate="A" pin="3"/>
+<pinref part="18V_SUPPLY_FOR_OPEAMP" gate="A" pin="3"/>
 <wire x1="5.08" y1="33.02" x2="-7.62" y2="33.02" width="0.1524" layer="91"/>
 <junction x="5.08" y="33.02"/>
-<pinref part="JP7" gate="A" pin="3"/>
+<pinref part="18V_SHARE" gate="A" pin="3"/>
 <wire x1="-7.62" y1="20.32" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="12.7" y1="33.02" x2="12.7" y2="35.56" width="0.1524" layer="91"/>
@@ -17275,7 +17275,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <segment>
 <pinref part="C3" gate="G$1" pin="-"/>
 <wire x1="160.02" y1="60.96" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
+<pinref part="SENSOR_OUTPUT" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -17350,21 +17350,21 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="20.32" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
 <junction x="114.3" y="12.7"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="SENSOR_OUTPUT" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
 <junction x="2.54" y="50.8"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="5V_SHARE" gate="G$1" pin="1"/>
 <wire x1="-7.62" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
 <junction x="2.54" y="40.64"/>
-<pinref part="JP6" gate="A" pin="2"/>
+<pinref part="18V_SUPPLY_FOR_OPEAMP" gate="A" pin="2"/>
 <wire x1="-7.62" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <junction x="2.54" y="30.48"/>
 <wire x1="2.54" y1="30.48" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="JP7" gate="A" pin="2"/>
+<pinref part="18V_SHARE" gate="A" pin="2"/>
 <wire x1="2.54" y1="17.78" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="SENSOR_INPUT" gate="A" pin="1"/>
 <wire x1="-7.62" y1="63.5" x2="2.54" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="30.48" y1="53.34" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
@@ -17378,13 +17378,13 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <segment>
 <wire x1="-7.62" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="68.58" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="5V_SHARE" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="53.34" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
 <junction x="7.62" y="53.34"/>
-<pinref part="JP3" gate="A" pin="3"/>
+<pinref part="SENSOR_INPUT" gate="A" pin="3"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
 </segment>
