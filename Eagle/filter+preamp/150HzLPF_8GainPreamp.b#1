@@ -1678,12 +1678,12 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="43.847" y="26.361" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="40.7228" y="23.1352" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="???" x="21.78" y="18.57" smashed="yes" rot="MR270">
+<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33u" x="21.78" y="18.57" smashed="yes" rot="MR270">
 <attribute name="NAME" x="21.145" y="19.205" size="1.27" layer="26" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="C" x="21.78" y="18.57" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="23.685" y="19.205" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="???" x="46.4" y="19.67" smashed="yes" rot="MR270">
+<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="33u" x="46.4" y="19.67" smashed="yes" rot="MR270">
 <attribute name="NAME" x="45.765" y="20.305" size="1.27" layer="26" rot="MR270"/>
 <attribute name="SPICEPREFIX" value="C" x="46.4" y="19.67" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="48.305" y="20.305" size="1.27" layer="28" rot="MR270"/>
