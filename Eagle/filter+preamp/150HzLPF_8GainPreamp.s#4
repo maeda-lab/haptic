@@ -16790,8 +16790,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="10k"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="10k"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="1u or 2.2u"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-030X075" package3d_urn="urn:adsk.eagle:package:23640/1" value="???"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-030X075" package3d_urn="urn:adsk.eagle:package:23640/1" value="???"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="???"/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="???"/>
+<part name="5V_SUPPLY_FOR_SENSOR" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="1X4" device="-3.5MM" package3d_urn="urn:adsk.eagle:package:6240819/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -16805,6 +16806,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="180.34" y="58.42" size="1.778" layer="91">GND</text>
 <text x="-17.78" y="71.12" size="1.778" layer="91">Input</text>
 <text x="180.34" y="60.96" size="1.778" layer="91">Output</text>
+<text x="-17.78" y="50.8" size="1.778" layer="91">Vcc</text>
+<text x="-17.78" y="48.26" size="1.778" layer="91">GND</text>
+<text x="-17.78" y="45.72" size="1.778" layer="91">Vcc</text>
+<text x="-17.78" y="43.18" size="1.778" layer="91">GND</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="35.56" y="68.58" smashed="yes">
@@ -16861,7 +16866,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="SENSOR_INPUT" gate="G$1" x="-7.62" y="66.04" smashed="yes" rot="R180">
 <attribute name="NAME" x="-12.7" y="58.42" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="-7.62" y="76.2" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="SENSOR_OUTPUT" gate="G$1" x="175.26" y="58.42" smashed="yes">
 <attribute name="NAME" x="180.34" y="66.04" size="1.27" layer="95" font="vector" rot="R180"/>
@@ -16869,7 +16873,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="10V-18V_SUPPLY_FOR_OPEAMP" gate="G$1" x="-7.62" y="27.94" smashed="yes" rot="R180">
 <attribute name="NAME" x="-12.7" y="20.32" size="1.27" layer="95" font="vector"/>
-<attribute name="VALUE" x="-7.62" y="38.1" size="1.27" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="C4" gate="G$1" x="114.3" y="63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="116.3574" y="67.183" size="1.778" layer="95" rot="R180"/>
@@ -16887,13 +16890,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="135.763" y="33.5026" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="142.24" y="27.94" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C6" gate="G$1" x="55.88" y="25.4" smashed="yes">
+<instance part="C8" gate="G$1" x="55.88" y="25.4" smashed="yes">
 <attribute name="NAME" x="57.404" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="57.404" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="C7" gate="G$1" x="114.3" y="25.4" smashed="yes">
+<instance part="C9" gate="G$1" x="114.3" y="25.4" smashed="yes">
 <attribute name="NAME" x="115.824" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.824" y="20.701" size="1.778" layer="96"/>
+</instance>
+<instance part="5V_SUPPLY_FOR_SENSOR" gate="G$1" x="-7.62" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="-15.24" y="38.1" size="1.27" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -16971,21 +16977,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="33.02" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="SENSOR_INPUT" gate="G$1" pin="3"/>
-<wire x1="-2.54" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="68.58" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="10V-18V_SUPPLY_FOR_OPEAMP" gate="G$1" pin="4"/>
 <wire x1="-2.54" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
 <junction x="5.08" y="33.02"/>
 <wire x1="5.08" y1="27.94" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="10V-18V_SUPPLY_FOR_OPEAMP" gate="G$1" pin="2"/>
 <wire x1="-2.54" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
-<junction x="7.62" y="33.02"/>
 <pinref part="U1" gate="G3" pin="P$V+"/>
 <wire x1="104.14" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="33.02" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="30.48" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <junction x="45.72" y="33.02"/>
 <pinref part="U2" gate="G3" pin="P$V+"/>
@@ -16993,11 +16994,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="104.14" y="33.02"/>
 <wire x1="45.72" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 <junction x="45.72" y="30.48"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="30.48" x2="114.3" y2="30.48" width="0.1524" layer="91"/>
 <junction x="104.14" y="30.48"/>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="30.48" x2="55.88" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="30.48" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -17069,8 +17070,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2.54" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SENSOR_INPUT" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="63.5" x2="2.54" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="63.5" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="63.5" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
 <junction x="2.54" y="30.48"/>
+<wire x1="2.54" y1="48.26" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="30.48" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <junction x="10.16" y="30.48"/>
@@ -17096,12 +17098,34 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="45.72" y="12.7"/>
 <junction x="121.92" y="12.7"/>
 <junction x="129.54" y="12.7"/>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="20.32" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
 <junction x="55.88" y="12.7"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="20.32" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
 <junction x="114.3" y="12.7"/>
+<pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="3"/>
+<wire x1="-2.54" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="91"/>
+<junction x="2.54" y="48.26"/>
+<pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="1"/>
+<wire x1="0" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="43.18" x2="0" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="0" y1="43.18" x2="0" y2="48.26" width="0.1524" layer="91"/>
+<junction x="0" y="48.26"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="SENSOR_INPUT" gate="G$1" pin="3"/>
+<wire x1="-2.54" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="68.58" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="4"/>
+<wire x1="-2.54" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="50.8" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<junction x="5.08" y="50.8"/>
+<wire x1="5.08" y1="45.72" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="45.72" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

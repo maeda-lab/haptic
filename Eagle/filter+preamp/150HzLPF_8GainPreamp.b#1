@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1965,6 +1965,14 @@ design rules under a new name.</description>
 <wire x1="24.8031" y1="23.2283" x2="20.0787" y2="27.9527" width="0.635" layer="16"/>
 <wire x1="16.5354" y1="27.9527" x2="16.51" y2="28.17" width="0.635" layer="16"/>
 <wire x1="24.8031" y1="23.2283" x2="24.83" y2="22.86" width="0.635" layer="16"/>
+</signal>
+<signal name="GND">
+<polygon width="0.1524" layer="16">
+<vertex x="1" y="37"/>
+<vertex x="1" y="1"/>
+<vertex x="75" y="1"/>
+<vertex x="75" y="37"/>
+</polygon>
 </signal>
 </signals>
 <mfgpreviewcolors>
