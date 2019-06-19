@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/HirokiMiyamoto/Documents/GitHub/haptic/Eagle/filter+preamp/150HzLPF_8GainPreamp.brd
 
-Start at      : 22:24:46 (2019/06/18)
-End at        : 22:24:51 (2019/06/18)
+Start at      : 13:41:57 (2019/06/19)
+End at        : 13:42:10 (2019/06/19)
 Elapsed time  : 00:00:01
 
-Signals       :    17   RoutingGrid: 21.6535 mil  Layers: 1
-Connections   :    72   predefined:  47 ( 0 Vias )
+Signals       :    16   RoutingGrid: 19.685 mil  Layers: 1
+Connections   :    49   predefined:  0 ( 0 Vias )
 
-Router memory :   28160
+Router memory :   33600
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8
+Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:00:00  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0         0         0         0         0
+Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00  00:00:00
+Number of Ripups  :         0        48         0         0         0         0
+max. Level        :         0         4         0         0         0         0
+max. Total        :         0        22         0         0         0         0
 
-Routed            :         0         0        25        25        25        25        25        25        25        25
-Vias              :         0         0         0         0         0         0         0         0         0         0
-Resolution        :    65.3 %    65.3 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         4        49        49        49        49        49
+Vias              :         0         0         0         0         0         0
+Resolution        :     8.2 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

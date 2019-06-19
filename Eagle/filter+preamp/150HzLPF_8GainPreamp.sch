@@ -17052,6 +17052,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="D2" library="LED" library_urn="urn:adsk.eagle:library:11396303" deviceset="LTL-1CHE" device="" package3d_urn="urn:adsk.eagle:package:10893502/2"/>
 <part name="D3" library="LED" library_urn="urn:adsk.eagle:library:11396303" deviceset="LTL-1CHE" device="" package3d_urn="urn:adsk.eagle:package:10893502/2"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/7" package3d_urn="urn:adsk.eagle:package:23493/2" value="3.3k"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -17175,6 +17176,10 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <instance part="D2" gate="G$1" x="25.4" y="53.34" smashed="yes" rot="R90"/>
 <instance part="D3" gate="G$1" x="22.86" y="40.64" smashed="yes"/>
 <instance part="R9" gate="G$1" x="12.7" y="40.64" smashed="yes" rot="R90"/>
+<instance part="C6" gate="G$1" x="5.08" y="66.04" smashed="yes">
+<attribute name="NAME" x="6.604" y="66.421" size="1.778" layer="95"/>
+<attribute name="VALUE" x="6.604" y="61.341" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17238,7 +17243,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="SENSOR_INPUT" gate="A" pin="4"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="18V_VCC" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="33.02" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
@@ -17312,7 +17317,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <wire x1="129.54" y1="38.1" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="129.54" y1="25.4" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
@@ -17321,7 +17326,8 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="45.72" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="30.48" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="63.5" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="63.5" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="60.96" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="50.8" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="40.64" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
@@ -17372,11 +17378,15 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="D3" gate="G$1" pin="C"/>
 <wire x1="22.86" y1="35.56" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <junction x="22.86" y="30.48"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<junction x="2.54" y="60.96"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="5V_VCC" class="0">
 <segment>
-<wire x1="-7.62" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="68.58" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="5V_SUPPLY_FOR_SENSOR" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
@@ -17387,6 +17397,8 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <pinref part="SENSOR_INPUT" gate="A" pin="3"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<junction x="5.08" y="68.58"/>
 </segment>
 </net>
 <net name="N$7" class="0">

@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-06-19T10:46:17Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "150HzLPF_8GainPreamp"
+        },
+        "Owner": "miyamoto hiro5 <miyamoto.hiro5@gmail.com>",
+        "Size": {
+            "X": 66,
+            "Y": 42
+        }
+    }
+}
